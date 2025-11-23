@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>JS Mini Projects</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="A curated collection of JavaScript mini projects built using HTML, JavaScript, and Tailwind CSS. Created by msn4u, an aspiring MERN stack developer." />
+    <meta name="author" content="Suhaib" />
+    <meta name="keywords" content="JavaScript projects, mini projects, DOM, Tailwind CSS, JS practice" />
+
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="JavaScript Mini Projects" />
+    <meta property="og:description" content="A collection of clean and interactive JavaScript projects by msn4u." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/preview.png" />
+    <meta property="og:url" content="" />
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                        merriweather: ['Merriweather', 'serif'],
+                        playfair: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        bonewhite: '#FAFAF8',
+                        charcoal: '#333333',
+                        graytext: '#555555',
+                        primaryblue: '#1E40AF',
+                        bordergray: '#E5E7EB',
+                    },
+                },
+            },
+        };
+    </script>
+
+</head>
+
+<body class="bg-bonewhite text-charcoal font-inter">
+
+    <!-- Header -->
+    <header class="w-full bg-[#FAFAF8] text-[#333333] shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-semibold tracking-tight font-playfair">
+                JS Mini Projects
+            </a>
+    
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-6 text-[16px] font-inter">
+                <a href="#projects" class="hover:text-[#1E40AF] transition">Projects</a>
+                <a href="#tech" class="hover:text-[#1E40AF] transition">Tech Stack</a>
+                <a href="#about" class="hover:text-[#1E40AF] transition">About</a>
+                <a href="https://github.com/suhaib/js-mini-projects" target="_blank"
+                    class="bg-[#1E40AF] text-white px-4 py-2 rounded-md hover:bg-[#1e3a8a] transition">
+                    GitHub
+                </a>
+            </nav>
+    
+            <!-- Mobile Menu Button -->
+            <button id="menuBtn" class="md:hidden text-[#333333] focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-7 h-7">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+    
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden bg-[#FAFAF8] border-t border-[#E5E7EB] px-4 py-4 space-y-4 hidden">
+    
+            <a href="#projects" class="block text-[16px] text-[#333333] hover:text-[#1E40AF] font-inter">
+                Projects
+            </a>
+            <a href="#tech" class="block text-[16px] text-[#333333] hover:text-[#1E40AF] font-inter">
+                Tech Stack
+            </a>
+            <a href="#about" class="block text-[16px] text-[#333333] hover:text-[#1E40AF] font-inter">
+                About
+            </a>
+            <a href="https://github.com/suhaib/js-mini-projects" target="_blank"
+                class="inline-block bg-[#1E40AF] text-white px-4 py-2 rounded-md hover:bg-[#1e3a8a] transition font-inter">
+                GitHub
+            </a>
+    
+        </div>
+    
+    </header>
+
+    <!-- Hero Section -->
+    <section class="w-full bg-[#FAFAF8] py-20">
+        <div class="max-w-4xl mx-auto text-center px-4">
+
+            <!-- Title -->
+            <h1 class="text-4xl md:text-5xl font-bold text-[#333333] mb-6 font-inter">
+                JavaScript Mini Projects
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-lg md:text-xl text-[#555555] leading-relaxed font-merriweather max-w-2xl mx-auto">
+                A curated collection of interactive front-end projects built using
+                HTML, Vanilla JavaScript (ES6+), and Tailwind CSS.
+                Explore practical UI components, logic handling, and clean design.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="mt-10 flex items-center justify-center gap-4">
+                <a href="#projects"
+                    class="bg-[#1E40AF] text-white px-6 py-3 rounded-lg font-inter text-lg hover:bg-[#1e3a8a] transition">
+                    View Projects
+                </a>
+
+                <a href="https://github.com/suhaib/js-mini-projects" target="_blank"
+                    class="border border-[#1E40AF] text-[#1E40AF] px-6 py-3 rounded-lg font-inter text-lg hover:bg-[#f0f4ff] transition">
+                    GitHub Repo
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-bonewhite">
+        <div class="max-w-6xl mx-auto px-4">
+
+            <!-- Section Header -->
+            <h2 class="text-3xl md:text-4xl font-bold text-charcoal text-center font-inter">
+                Projects Overview
+            </h2>
+            <p class="text-graytext text-center mt-3 mb-12 max-w-2xl mx-auto font-merriweather">
+                Explore five interactive JavaScript mini projects demonstrating DOM manipulation, event handling, and
+                responsive UI patterns.
+            </p>
+
+            <!-- Grid Layout -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Card: Color Flipper -->
+                <div class="border border-bordergray rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold mb-2 font-inter">Color Flipper</h3>
+                    <p class="text-graytext mb-4 font-merriweather">
+                        Generates random background colors and HEX values with dynamic DOM updates.
+                    </p>
+                    <a href="https://color-flipper-nine-jade.vercel.app"
+                        class="inline-block bg-primaryblue text-white px-4 py-2 rounded-md hover:bg-[#1e3a8a] transition font-inter">
+                        Open Project
+                    </a>
+                </div>
+
+                <!-- Card: Stopwatch -->
+                <div class="border border-bordergray rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold mb-2 font-inter">Stopwatch</h3>
+                    <p class="text-graytext mb-4 font-merriweather">
+                        Millisecond-accurate timer with start, pause, and reset functionality.
+                    </p>
+                    <a href="https://stop-watch-msn4u.vercel.app/"
+                        class="inline-block bg-primaryblue text-white px-4 py-2 rounded-md hover:bg-[#1e3a8a] transition font-inter">
+                        Open Project
+                    </a>
+                </div>
+
+                <!-- Card: Palindrome Checker -->
+                <div class="border border-bordergray rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold mb-2 font-inter">Palindrome Checker</h3>
+                    <p class="text-graytext mb-4 font-merriweather">
+                        Validates whether user input is a palindrome using clean string logic.
+                    </p>
+                    <a href="https://palindrome-checker-msn4u.vercel.app/"
+                        class="inline-block bg-primaryblue text-white px-4 py-2 rounded-md hover:bg-[#1e3a8a] transition font-inter">
+                        Open Project
+                    </a>
+                </div>
+
+                <!-- Card: Random Quote Generator -->
+                <div class="border border-bordergray rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold mb-2 font-inter">Random Quote Generator</h3>
+                    <p class="text-graytext mb-4 font-merriweather">
+                        Displays random quotes dynamically with smooth UI updates.
+                    </p>
+                    <a href="https://random-quote-generator-msn4u.vercel.app/"
+                        class="inline-block bg-primaryblue text-white px-4 py-2 rounded-md hover:bg-[#1e3a8a] transition font-inter">
+                        Open Project
+                    </a>
+                </div>
+
+                <!-- Card: Todo List -->
+                <div class="border border-bordergray rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold mb-2 font-inter">Todo List</h3>
+                    <p class="text-graytext mb-4 font-merriweather">
+                        A simple CRUD-based task manager demonstrating event delegation and local state handling.
+                    </p>
+                    <a href="https://todo-list-msn4u.vercel.app/"
+                        class="inline-block bg-primaryblue text-white px-4 py-2 rounded-md hover:bg-[#1e3a8a] transition font-inter">
+                        Open Project
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Tech Stack Section -->
+    <section id="tech" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+
+            <!-- Section Title -->
+            <h2 class="text-3xl md:text-4xl font-bold text-charcoal text-center font-inter">
+                Tech Stack
+            </h2>
+            <p class="text-graytext text-center mt-3 mb-12 max-w-2xl mx-auto font-merriweather">
+                Technologies used to build the JavaScript Mini Projects collection.
+            </p>
+
+            <!-- Tech Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+                <!-- HTML -->
+                <div
+                    class="border border-bordergray rounded-xl p-6 text-center shadow-sm hover:shadow-md transition bg-bonewhite">
+                    <span class="text-primaryblue font-inter text-xl font-semibold">HTML5</span>
+                    <p class="text-graytext mt-2 font-merriweather">
+                        Semantic structure and clean markup for each project.
+                    </p>
+                </div>
+
+                <!-- JavaScript -->
+                <div
+                    class="border border-bordergray rounded-xl p-6 text-center shadow-sm hover:shadow-md transition bg-bonewhite">
+                    <span class="text-primaryblue font-inter text-xl font-semibold">JavaScript (ES6+)</span>
+                    <p class="text-graytext mt-2 font-merriweather">
+                        DOM manipulation, event handling, and interactive logic.
+                    </p>
+                </div>
+
+                <!-- Tailwind CSS -->
+                <div
+                    class="border border-bordergray rounded-xl p-6 text-center shadow-sm hover:shadow-md transition bg-bonewhite">
+                    <span class="text-primaryblue font-inter text-xl font-semibold">Tailwind CSS</span>
+                    <p class="text-graytext mt-2 font-merriweather">
+                        Utility-first styling for a consistent and responsive UI.
+                    </p>
+                </div>
+
+                <!-- GitHub -->
+                <div
+                    class="border border-bordergray rounded-xl p-6 text-center shadow-sm hover:shadow-md transition bg-bonewhite">
+                    <span class="text-primaryblue font-inter text-xl font-semibold">GitHub</span>
+                    <p class="text-graytext mt-2 font-merriweather">
+                        Version control, project hosting, and collaboration.
+                    </p>
+                </div>
+
+                <!-- Vercel -->
+                <div
+                    class="border border-bordergray rounded-xl p-6 text-center shadow-sm hover:shadow-md transition bg-bonewhite">
+                    <span class="text-primaryblue font-inter text-xl font-semibold">Vercel</span>
+                    <p class="text-graytext mt-2 font-merriweather">
+                        Fast, serverless deployment for production-ready hosting.
+                    </p>
+                </div>
+
+                <!-- Responsive Design -->
+                <div
+                    class="border border-bordergray rounded-xl p-6 text-center shadow-sm hover:shadow-md transition bg-bonewhite">
+                    <span class="text-primaryblue font-inter text-xl font-semibold">Responsive UI</span>
+                    <p class="text-graytext mt-2 font-merriweather">
+                        Mobile-first design ensuring accessibility and usability.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-bonewhite">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+
+            <!-- Heading -->
+            <h2 class="text-3xl md:text-4xl font-bold text-charcoal font-inter">
+                About the Developer
+            </h2>
+
+            <!-- Description -->
+            <p class="text-graytext mt-4 max-w-2xl mx-auto font-merriweather leading-relaxed">
+                I'm <span class="font-semibold text-charcoal">Mohamed Suhaib Nadakkavil</span>, an aspiring
+                <span class="font-semibold text-primaryblue">MERN Stack Developer</span> focused on creating clean,
+                interactive, and user-friendly applications.
+                This project collection demonstrates my commitment to mastering JavaScript fundamentals, UI design, and
+                component-based development.
+            </p>
+
+            <!-- Divider -->
+            <div class="w-24 h-1 bg-primaryblue mx-auto my-8 rounded-full"></div>
+
+            <!-- Social Links -->
+            <div class="flex items-center justify-center gap-6 mt-4">
+
+                <a href="https://github.com/SuhaibNadakkavil" target="_blank"
+                    class="text-primaryblue font-inter text-lg hover:underline hover:text-[#163a94] transition">
+                    GitHub
+                </a>
+
+                <a href="mailto:suhaibmd268@gmail.com"
+                    class="text-primaryblue font-inter text-lg hover:underline hover:text-[#163a94] transition">
+                    Email
+                </a>
+
+                <a href="your-portfolio-link" target="_blank"
+                    class="text-primaryblue font-inter text-lg hover:underline hover:text-[#163a94] transition">
+                    Portfolio
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="w-full bg-white border-t border-bordergray py-8 mt-10">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+
+            <p class="text-graytext font-merriweather">
+                © <span id="year"></span> JS Mini Projects. Built by
+                <span class="font-semibold text-charcoal">msn4u</span>.
+            </p>
+
+            <div class="mt-3">
+                <a href="https://github.com/SuhaibNadakkavil" target="_blank"
+                    class="text-primaryblue hover:underline hover:text-[#163a94] font-inter transition">
+                    GitHub Profile
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Auto-Year Script -->
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
