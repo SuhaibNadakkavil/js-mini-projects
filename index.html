@@ -20,8 +20,7 @@
     <meta property="og:title" content="JavaScript Mini Projects" />
     <meta property="og:description" content="A collection of clean and interactive JavaScript projects by msn4u." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/preview.png" />
-    <meta property="og:url" content="" />
+    <meta property="og:url" content="https://js-mini-projects-msn4u.vercel.app/" />
 
     <!-- Google Fonts -->
     <link
@@ -60,23 +59,23 @@
     <!-- Header -->
     <header class="w-full bg-[#FAFAF8] text-[#333333] shadow-sm sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-    
+
             <!-- Logo -->
             <a href="#" class="text-2xl font-semibold tracking-tight font-playfair">
                 JS Mini Projects
             </a>
-    
+
             <!-- Desktop Navigation -->
             <nav class="hidden md:flex items-center gap-6 text-[16px] font-inter">
                 <a href="#projects" class="hover:text-[#1E40AF] transition">Projects</a>
                 <a href="#tech" class="hover:text-[#1E40AF] transition">Tech Stack</a>
                 <a href="#about" class="hover:text-[#1E40AF] transition">About</a>
-                <a href="https://github.com/suhaib/js-mini-projects" target="_blank"
+                <a href="https://github.com/SuhaibNadakkavil/js-mini-projects" target="_blank"
                     class="bg-[#1E40AF] text-white px-4 py-2 rounded-md hover:bg-[#1e3a8a] transition">
                     GitHub
                 </a>
             </nav>
-    
+
             <!-- Mobile Menu Button -->
             <button id="menuBtn" class="md:hidden text-[#333333] focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
@@ -84,12 +83,12 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </button>
-    
+
         </div>
-    
+
         <!-- Mobile Menu -->
         <div id="mobileMenu" class="md:hidden bg-[#FAFAF8] border-t border-[#E5E7EB] px-4 py-4 space-y-4 hidden">
-    
+
             <a href="#projects" class="block text-[16px] text-[#333333] hover:text-[#1E40AF] font-inter">
                 Projects
             </a>
@@ -99,13 +98,13 @@
             <a href="#about" class="block text-[16px] text-[#333333] hover:text-[#1E40AF] font-inter">
                 About
             </a>
-            <a href="https://github.com/suhaib/js-mini-projects" target="_blank"
+            <a href="https://github.com/SuhaibNadakkavil/js-mini-projects" target="_blank"
                 class="inline-block bg-[#1E40AF] text-white px-4 py-2 rounded-md hover:bg-[#1e3a8a] transition font-inter">
                 GitHub
             </a>
-    
+
         </div>
-    
+
     </header>
 
     <!-- Hero Section -->
@@ -131,7 +130,7 @@
                     View Projects
                 </a>
 
-                <a href="https://github.com/suhaib/js-mini-projects" target="_blank"
+                <a href="https://github.com/SuhaibNadakkavil/js-mini-projects" target="_blank"
                     class="border border-[#1E40AF] text-[#1E40AF] px-6 py-3 rounded-lg font-inter text-lg hover:bg-[#f0f4ff] transition">
                     GitHub Repo
                 </a>
@@ -156,64 +155,115 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <!-- Card: Color Flipper -->
-                <div class="border border-bordergray rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition">
-                    <h3 class="text-xl font-semibold mb-2 font-inter">Color Flipper</h3>
-                    <p class="text-graytext mb-4 font-merriweather">
-                        Generates random background colors and HEX values with dynamic DOM updates.
-                    </p>
-                    <a href="https://color-flipper-nine-jade.vercel.app"
-                        class="inline-block bg-primaryblue text-white px-4 py-2 rounded-md hover:bg-[#1e3a8a] transition font-inter">
-                        Open Project
-                    </a>
+                <div
+                    class="border border-bordergray rounded-xl bg-white shadow-sm hover:shadow-md transition overflow-hidden">
+
+                    <!-- Image -->
+                    <img src="assets/color-flipper.png" alt="Todo List Preview" class="w-full h-40 object-cover" />
+
+                    <!-- Content -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 font-inter">Color Flipper</h3>
+                        <p class="text-graytext mb-4 font-merriweather">
+                            Generates random background colors and HEX values with dynamic DOM updates.
+                        </p>
+                        <a href="https://color-flipper-nine-jade.vercel.app"
+                            class="inline-block bg-primaryblue text-white px-4 py-2 rounded-md hover:bg-[#1e3a8a] transition font-inter">
+                            Open Project
+                        </a>
+                    </div>
+
                 </div>
+
 
                 <!-- Card: Stopwatch -->
-                <div class="border border-bordergray rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition">
-                    <h3 class="text-xl font-semibold mb-2 font-inter">Stopwatch</h3>
-                    <p class="text-graytext mb-4 font-merriweather">
-                        Millisecond-accurate timer with start, pause, and reset functionality.
-                    </p>
-                    <a href="https://stop-watch-msn4u.vercel.app/"
-                        class="inline-block bg-primaryblue text-white px-4 py-2 rounded-md hover:bg-[#1e3a8a] transition font-inter">
-                        Open Project
-                    </a>
+                <div
+                    class="border border-bordergray rounded-xl bg-white shadow-sm hover:shadow-md transition overflow-hidden">
+
+                    <!-- Image -->
+                    <img src="assets/stop-watch.png" alt="Todo List Preview" class="w-full h-40 object-cover" />
+
+                    <!-- Content -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 font-inter">Stopwatch</h3>
+                        <p class="text-graytext mb-4 font-merriweather">
+                            Millisecond-accurate timer with start, pause, and reset functionality.
+                        </p>
+                        <a href="https://stop-watch-msn4u.vercel.app/"
+                            class="inline-block bg-primaryblue text-white px-4 py-2 rounded-md hover:bg-[#1e3a8a] transition font-inter">
+                            Open Project
+                        </a>
+                    </div>
+
                 </div>
+
 
                 <!-- Card: Palindrome Checker -->
-                <div class="border border-bordergray rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition">
-                    <h3 class="text-xl font-semibold mb-2 font-inter">Palindrome Checker</h3>
-                    <p class="text-graytext mb-4 font-merriweather">
-                        Validates whether user input is a palindrome using clean string logic.
-                    </p>
-                    <a href="https://palindrome-checker-msn4u.vercel.app/"
-                        class="inline-block bg-primaryblue text-white px-4 py-2 rounded-md hover:bg-[#1e3a8a] transition font-inter">
-                        Open Project
-                    </a>
+                <div
+                    class="border border-bordergray rounded-xl bg-white shadow-sm hover:shadow-md transition overflow-hidden">
+
+                    <!-- Image -->
+                    <img src="assets/palindrome-checker.png" alt="Todo List Preview" class="w-full h-40 object-cover" />
+
+                    <!-- Content -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 font-inter">Palindrome Checker</h3>
+                        <p class="text-graytext mb-4 font-merriweather">
+                            Validates whether user input is a palindrome using clean string logic.
+                        </p>
+                        <a href="https://palindrome-checker-msn4u.vercel.app/"
+                            class="inline-block bg-primaryblue text-white px-4 py-2 rounded-md hover:bg-[#1e3a8a] transition font-inter">
+                            Open Project
+                        </a>
+                    </div>
+
                 </div>
+
 
                 <!-- Card: Random Quote Generator -->
-                <div class="border border-bordergray rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition">
-                    <h3 class="text-xl font-semibold mb-2 font-inter">Random Quote Generator</h3>
-                    <p class="text-graytext mb-4 font-merriweather">
-                        Displays random quotes dynamically with smooth UI updates.
-                    </p>
-                    <a href="https://random-quote-generator-msn4u.vercel.app/"
-                        class="inline-block bg-primaryblue text-white px-4 py-2 rounded-md hover:bg-[#1e3a8a] transition font-inter">
-                        Open Project
-                    </a>
+                <div
+                    class="border border-bordergray rounded-xl bg-white shadow-sm hover:shadow-md transition overflow-hidden">
+
+                    <!-- Image -->
+                    <img src="assets/random-quote-generator.png" alt="Todo List Preview"
+                        class="w-full h-40 object-cover" />
+
+                    <!-- Content -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 font-inter">Random Quote Generator</h3>
+                        <p class="text-graytext mb-4 font-merriweather">
+                            Displays random quotes dynamically with smooth UI updates.
+                        </p>
+                        <a href="https://random-quote-generator-msn4u.vercel.app/"
+                            class="inline-block bg-primaryblue text-white px-4 py-2 rounded-md hover:bg-[#1e3a8a] transition font-inter">
+                            Open Project
+                        </a>
+                    </div>
+
                 </div>
 
+
                 <!-- Card: Todo List -->
-                <div class="border border-bordergray rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition">
-                    <h3 class="text-xl font-semibold mb-2 font-inter">Todo List</h3>
-                    <p class="text-graytext mb-4 font-merriweather">
-                        A simple CRUD-based task manager demonstrating event delegation and local state handling.
-                    </p>
-                    <a href="https://todo-list-msn4u.vercel.app/"
-                        class="inline-block bg-primaryblue text-white px-4 py-2 rounded-md hover:bg-[#1e3a8a] transition font-inter">
-                        Open Project
-                    </a>
+                <div
+                    class="border border-bordergray rounded-xl bg-white shadow-sm hover:shadow-md transition overflow-hidden">
+
+                    <!-- Image -->
+                    <img src="assets/todo-list.png" alt="Todo List Preview" class="w-full h-40 object-cover" />
+
+                    <!-- Content -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 font-inter">Todo List</h3>
+                        <p class="text-graytext mb-4 font-merriweather">
+                            A simple CRUD-based task manager demonstrating event delegation and local state handling.
+                        </p>
+                        <a href="https://todo-list-msn4u.vercel.app/"
+                            class="inline-block bg-primaryblue text-white px-4 py-2 rounded-md hover:bg-[#1e3a8a] transition font-inter">
+                            Open Project
+                        </a>
+                    </div>
+
                 </div>
+
 
             </div>
         </div>
@@ -364,4 +414,5 @@
         });
     </script>
 </body>
+
 </html>
