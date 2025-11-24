@@ -1,4 +1,7 @@
 **JavaScript Mini Projects**
+
+<img width="1889" height="867" alt="image" src="https://github.com/user-attachments/assets/f226188a-bd6e-4785-b4bb-da0b7244abe4" />
+
 A curated collection of five interactive JavaScript applications built using HTML, Vanilla JavaScript (ES6+), and Tailwind CSS.
 This repository showcases practical front-end fundamentals, including DOM manipulation, event handling, component structure, and UI usability.
 
