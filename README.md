@@ -52,4 +52,4 @@ I’m Mohamed Suhaib Nadakkavil, an aspiring MERN stack developer focused on bui
 **📬 Contact**
 GitHub: https://github.com/SuhaibNadakkavil
 Email: suhaibmd268@gmail.com
-Portfolio: your-portfolio-link
+Portfolio: https://personal-portfolio-msn4u.vercel.app/
